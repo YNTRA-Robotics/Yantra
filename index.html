@@ -108,178 +108,93 @@
 <div class="wrap" id="top">
 
   <header class="hero">
-    <h1>Autonomy kits for the machines already in the mine.</h1>
-    <p>Underground mining has barely changed in 50 years. The machines got bigger, but there is still a person at the face running them. We are building retrofit kits that make the jumbo drills mines already own autonomous, then doing the same for the rest of the drill and blast cycle, until no one needs to be underground.</p>
+    <h1>Automating the maintenance of the machines that build the world.</h1>
+    <p>Mining, construction, trucking, and farming run on heavy equipment that has to stay up. There aren't enough technicians to keep it running, and fewer are coming in every year. We are using physical AI and robotics to close that gap.</p>
   </header>
 
   <section id="manifesto">
     <p class="eyebrow">Manifesto</p>
     <h2>Robots are for doing work</h2>
 
-    <p>Robotics is in its demo era. Humanoids folding laundry and models picking cups off a table make good videos, but very few robots are doing real work at scale.</p>
+    <p>Robotics is in its demo era. Humanoids folding laundry make good videos, but very few robots are doing real work at scale. We believe a robot should be judged on how much work it gets done without a person there, and the place to start is where the work matters most and there aren't enough people to do it.</p>
 
-    <p>We believe the goal of robotics is to eliminate human labour. A robot is a tool for producing work, and it should be judged on how much work it gets done without a person there.</p>
+    <h3>The machines behind everything</h3>
+    <p>Every tonne of copper, kilometre of highway, load of freight, and harvest moves through a haul truck, an excavator, a Class 8 tractor, or a combine. When one goes down, the work stops with it. Keeping those machines up is the job of a heavy equipment technician, and there are not enough of them.</p>
 
-    <p>Mines are already full of machines that do real work every day, like jumbos, bolters, scoops, and charging rigs. They are proven and built for underground, they just need a person to run them. That is why we want to use the existing machines already in the mine, and allow them to produce work on their own.</p>
-
-    <h3>Zero people in the tunnel</h3>
-    <p>At The Boring Company the rule was zero people in the tunnel. Two of us worked there alongside ex-miners. When no one is allowed in, every task has to be redesigned so a machine can do it, and the result ends up faster and cheaper because it was never built around a person.</p>
-    <p>We want to bring that same rule to mining.</p>
+    <h3>What we heard</h3>
+    <p>We have had more than 30 conversations with maintenance managers in mining, trucking, and construction. Almost all of them put the same problem first.</p>
 
     <blockquote>
-      <p>Zero people at the face. Then zero people in the heading. Then zero people underground.</p>
-      <cite>How we get there</cite>
+      <p>&ldquo;We need another mechanic to start on the 15th. We got 3 more haul trucks we got to get going. We&rsquo;re behind schedule right now.&rdquo;</p>
+      <cite>Derek, maintenance superintendent, Gibraltar Mines</cite>
     </blockquote>
 
-    <h3>Start with the drill</h3>
-    <p>Most mines can't afford to replace working jumbos with new autonomous ones. So we start with the rig they already run, and add the sensors, perception, and boom control it needs to drill a pattern on its own.</p>
+    <blockquote>
+      <p>&ldquo;There is a dire need for these technicians in our trade. It is so hard to get technicians now.&rdquo;</p>
+      <cite>Jamie, Challenger Motor Freight</cite>
+    </blockquote>
 
-    <h3>Then the rest of the cycle</h3>
-    <p>Drilling is one step in the cycle of drill, charge, blast, ventilate, muck, scale, and bolt. After the drill we automate the other machines, then build the software that runs them together, tracking every heading, predicting where the cycle will stall, and dispatching the right machine.</p>
+    <blockquote>
+      <p>&ldquo;A lot of those older folks that retired that are really good &hellip; now I have to hire 2 guys compared to that one.&rdquo;</p>
+      <cite>Justin, Komatsu</cite>
+    </blockquote>
+
+    <h3>The machines got harder to fix</h3>
+    <p>Heavy equipment is now a network of computers. A modern truck or loader has many control units on a databus, emissions systems with their own sensors and software, and telematics streaming fault codes all day, read through a different proprietary tool for every brand. Diagnosis used to mean listening to an engine. Now it means reading data from a dozen systems, and the technicians best at it are retiring.</p>
+
+    <h3>Where we start</h3>
+    <p>A large share of a technician's week goes to predictable work like greasing, fluids, filters, and inspections. Robots should take that first, then AI should take on diagnosis, so the skilled people we have can focus on the hard problems.</p>
   </section>
 
   <section id="deepdive">
     <p class="eyebrow">The problem</p>
-    <h2>Mines have to produce more metal with fewer people</h2>
+    <h2>More machines to keep running, fewer people to do it</h2>
 
-    <h3>Demand is going up</h3>
-    <p>EVs, batteries, transmission lines, and the data centres behind AI all need copper, lithium, nickel, and rare earths. The IEA expects lithium demand to grow fivefold by 2040 and a 30 percent shortfall in copper supply by 2035 under current policies. A lot of that metal sits in hard rock deposits that can only be mined underground.</p>
-
-    <h3>The workforce is going down</h3>
-    <p>SME expects 221,000 US mining workers to retire by 2029, more than half the workforce. Fewer people are coming in than leaving, and a lot of experience is leaving with them.</p>
-
-    <h3>Why not hire more people?</h3>
-    <p>Mines are already competing for the same small pool of workers, and it takes years to train someone to run a jumbo well. The people who would train them are the ones retiring.</p>
-    <p>Canada is in the same position. MiHR expects the industry to need about 191,000 hires from 2024 to 2034, and close to a quarter of them will be hard to fill.</p>
-    <p>New mines don't help much either. It takes 29 years on average to bring a mine from discovery to production in the US, and 27 in Canada, and every new mine needs its own crew. Bigger machines move more rock, but they still need an operator.</p>
+    <h3>Not enough technicians are coming in</h3>
+    <p>The BLS expects about 20,300 openings a year for US heavy vehicle and mobile equipment technicians, mostly to replace people retiring or leaving. Across all vehicle trades, TechForce counts about 242,000 openings a year against 102,000 new graduates. For diesel, the gap is 52 percent.</p>
 
     <figure class="chart">
-      <figcaption>Average years from discovery to production for a new mine</figcaption>
-      <svg viewBox="0 0 620 176" role="img" aria-label="Horizontal bar chart of average mine development time: Zambia 34 years, United States 29 years, Canada 27 years, Australia 20 years.">
+      <figcaption>US vehicle technician openings vs. new graduates, per year</figcaption>
+      <svg viewBox="0 0 620 92" role="img" aria-label="Horizontal bar chart: about 241,800 technician job openings a year against about 101,700 new technician graduates a year in the US, across auto, diesel, collision and aviation.">
         <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12">
-          <text x="110" y="30" text-anchor="end" fill="var(--ink-2)">Zambia</text>
-          <rect x="120" y="14" width="400" height="24" fill="var(--rule-strong)"/>
-          <text x="528" y="30" fill="var(--ink-2)">34</text>
+          <text x="110" y="30" text-anchor="end" fill="var(--ink)" font-weight="500">Openings</text>
+          <rect x="120" y="14" width="400" height="24" fill="var(--ink)"/>
+          <text x="528" y="30" fill="var(--ink)" font-weight="500">241,842</text>
 
-          <text x="110" y="72" text-anchor="end" fill="var(--ink)" font-weight="500">United States</text>
-          <rect x="120" y="56" width="341" height="24" fill="var(--ink)"/>
-          <text x="469" y="72" fill="var(--ink)" font-weight="500">29</text>
-
-          <text x="110" y="114" text-anchor="end" fill="var(--ink)" font-weight="500">Canada</text>
-          <rect x="120" y="98" width="318" height="24" fill="var(--ink)"/>
-          <text x="446" y="114" fill="var(--ink)" font-weight="500">27</text>
-
-          <text x="110" y="156" text-anchor="end" fill="var(--ink-2)">Australia</text>
-          <rect x="120" y="140" width="235" height="24" fill="var(--rule-strong)"/>
-          <text x="363" y="156" fill="var(--ink-2)">20</text>
+          <text x="110" y="72" text-anchor="end" fill="var(--ink-2)">Graduates</text>
+          <rect x="120" y="56" width="168" height="24" fill="var(--rule-strong)"/>
+          <text x="296" y="72" fill="var(--ink-2)">101,743</text>
         </g>
       </svg>
-      <p class="source">Source: S&amp;P Global Market Intelligence, <a href="https://press.spglobal.com/2024-07-18-United-States-Ranks-Next-to-Last-in-Development-Time-for-New-Mines-that-Produce-Critical-Minerals-for-Energy-Transition,-S-P-Global-Finds" target="_blank" rel="noopener">Mine development times: the US in perspective</a> (2024). The US and Canada are the second and third slowest countries in the study.</p>
+      <p class="source">Source: TechForce Foundation, <a href="https://techforce.org/supplydemand/" target="_blank" rel="noopener">Technician Supply &amp; Demand Report</a> (May 2026). Auto, diesel, collision, and aviation combined.</p>
     </figure>
-    <p>If there aren't enough people, the only way to produce more is with machines that don't need them. That is why we believe automation is the only real solution.</p>
+
+    <h3>Every industry is short at once</h3>
+    <p>Construction and farm equipment dealers are short about 10,000 technicians a year in the US and 1,200 in Canada, and 80 percent say they can't meet customer demand. In trucking, 65.5 percent of diesel shops were understaffed in 2025. Mining needs about 191,000 hires in Canada alone over the next decade. All four industries are pulling from the same small pool and taking technicians from each other.</p>
+
+    <h3>The experience is leaving</h3>
+    <p>The median heavy-duty technician has 17 years of experience, and only 17 percent of shop respondents are under 30. The ones who stay are looking to go. 79 percent of equipment technicians would leave for another industry, and turnover peaks two to five years in, right when a tech is fully trained. When a senior tech retires, shops need two new hires to replace them, and they can't find one.</p>
+
+    <h3>Why not hire more people?</h3>
+    <p>Everyone is already trying. Wages rose more than 14 percent last year, dealers are recruiting overseas, and OEMs are funding schools, and the gap is still growing. It takes years to train a technician who can diagnose a machine alone, and the machines are getting more complex faster than people can be trained on them. If there aren't enough people, the only way to keep more machines running is automation.</p>
 
     <h3>The numbers</h3>
     <ul class="stats">
-      <li><span class="num">29 <small>years</small></span><span class="lbl">Average time from discovery to production for a new mine in the United States. Canada is 27. Only Zambia is slower.</span><span class="src">S&amp;P Global, 2024</span></li>
-      <li><span class="num">221,000</span><span class="lbl">US mining workers expected to retire by 2029, more than half the workforce.</span><span class="src">SME</span></li>
-      <li><span class="num">1% <small>of workers</small></span><span class="lbl">Mining's share of the global workforce. Its share of fatal accidents at work is about 8 percent.</span><span class="src">International Labour Organization</span></li>
-      <li><span class="num">40 <small>&rarr; 28 &rarr; 33</small></span><span class="lbl">US mining deaths in 2023, 2024 and 2025. About one every two weeks.</span><span class="src">MSHA</span></li>
-      <li><span class="num">30%</span><span class="lbl">Projected shortfall in copper supply by 2035 under current policies.</span><span class="src">IEA, 2025</span></li>
-      <li><span class="num">&times;0.5</span><span class="lbl">Change in mining labour productivity since the mid-1990s. Manufacturing more than doubled over the same period.</span><span class="src">McKinsey, OECD data</span></li>
-      <li><span class="num">18 <small>&rarr; 0</small></span><span class="lbl">Major copper discoveries worldwide in 1997, the peak year, and in 2023.</span><span class="src">S&amp;P Global</span></li>
-      <li><span class="num">1.27% <small>&rarr; 0.86%</small></span><span class="lbl">Average grade of copper ore mined in Chile, 2000 to 2011. About a third less copper in every tonne of rock.</span><span class="src">Farías et al., 2016</span></li>
-      <li><span class="num">191,000</span><span class="lbl">Hires the Canadian mining industry needs between 2024 and 2034. Close to a quarter will be hard to fill.</span><span class="src">MiHR, 2024</span></li>
-      <li><span class="num">69%</span><span class="lbl">Share of deaths in US underground metal mines since 2000 caused by powered haulage or falls of ground.</span><span class="src">NIOSH</span></li>
+      <li><span class="num">10,000 <small>/ year</small></span><span class="lbl">US technician shortage at construction and agriculture equipment dealers. Canada is short more than 1,200 a year.</span><span class="src">AED Foundation, 2026</span></li>
+      <li><span class="num">$7B <small>/ year</small></span><span class="lbl">Lost business at US equipment dealers from the shortage, up from $2.4 billion a decade ago.</span><span class="src">AED Foundation, 2026</span></li>
+      <li><span class="num">80%</span><span class="lbl">US equipment dealers who can't meet customer demand because they can't find technicians.</span><span class="src">AED Foundation, 2026</span></li>
+      <li><span class="num">65.5%</span><span class="lbl">Trucking diesel shops understaffed in 2025, with 19.3 percent of technician positions open.</span><span class="src">ATRI, 2025</span></li>
+      <li><span class="num">52%</span><span class="lbl">Gap between demand for new diesel technicians and the supply coming out of training.</span><span class="src">TechForce Foundation, 2026</span></li>
+      <li><span class="num">17%</span><span class="lbl">Heavy-duty repair shop respondents under 30. The median technician has 17 years of experience.</span><span class="src">Fullbay, 2026</span></li>
+      <li><span class="num">79%</span><span class="lbl">US equipment technicians who would leave for another industry for better pay and conditions.</span><span class="src">AED Foundation, 2026</span></li>
+      <li><span class="num">20&ndash;40%</span><span class="lbl">Share of operating cost that goes to maintenance in heavy industry.</span><span class="src">McKinsey</span></li>
     </ul>
 
-    <h3>The easy ore is gone</h3>
-    <p>The deposits that are left are deeper, lower grade, and harder to find. There were 18 major copper discoveries in 1997, fewer than five in most years since 2010, and none in 2023. In Chile the average grade fell by about a third in a decade, so mines have to move more rock for the same copper, and more of it is underground.</p>
+    <h3>Downtime is the real cost</h3>
+    <p>Maintenance is 20 to 40 percent of operating cost in heavy industry, and it drives 30 to 50 percent of lost equipment effectiveness. When a haul truck or a tractor sits waiting for a technician, the cost isn't the repair. It is everything that machine was supposed to be doing. And when a shop is short, preventive maintenance is the first thing skipped, which causes the next breakdown.</p>
 
-    <h3>Underground is where people get hurt</h3>
-    <p>Most deaths in underground metal mines come from powered haulage and falls of ground, which are the jobs in the drill and blast cycle. Every task we automate at the face takes a person out of the most dangerous part of the mine.</p>
-
-    <figure class="chart">
-      <figcaption>Deaths in US underground metal mines by cause, 2000 to 2023</figcaption>
-      <svg viewBox="0 0 620 218" role="img" aria-label="Horizontal bar chart of fatalities in US underground metal mines, 2000 to 2023: powered haulage 41 percent, fall of ground 29 percent, explosives 8 percent, machinery 8 percent, all other causes 14 percent.">
-        <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12">
-          <text x="150" y="30" text-anchor="end" fill="var(--ink)" font-weight="500">Powered haulage</text>
-          <rect x="160" y="14" width="326" height="24" fill="var(--ink)"/>
-          <text x="494" y="30" fill="var(--ink)" font-weight="500">41%</text>
-
-          <text x="150" y="72" text-anchor="end" fill="var(--ink)" font-weight="500">Fall of ground</text>
-          <rect x="160" y="56" width="229" height="24" fill="var(--ink)"/>
-          <text x="397" y="72" fill="var(--ink)" font-weight="500">29%</text>
-
-          <text x="150" y="114" text-anchor="end" fill="var(--ink)" font-weight="500">Explosives</text>
-          <rect x="160" y="98" width="66" height="24" fill="var(--ink)"/>
-          <text x="234" y="114" fill="var(--ink)" font-weight="500">8%</text>
-
-          <text x="150" y="156" text-anchor="end" fill="var(--ink-2)">Machinery</text>
-          <rect x="160" y="140" width="66" height="24" fill="var(--rule-strong)"/>
-          <text x="234" y="156" fill="var(--ink-2)">8%</text>
-
-          <text x="150" y="198" text-anchor="end" fill="var(--ink-2)">All other causes</text>
-          <rect x="160" y="182" width="114" height="24" fill="var(--rule-strong)"/>
-          <text x="282" y="198" fill="var(--ink-2)">14%</text>
-        </g>
-      </svg>
-      <p class="source">Source: NIOSH Mine and Mine Worker Charts, <a href="https://wwwn.cdc.gov/NIOSH-Mining/MMWC/Fatality/Count?StartYear=2000&amp;EndYear=2023&amp;SelectedMineType=1&amp;SelectedCommodity=2&amp;SelectedCommodity=3&amp;SelectedCommodity=4&amp;SelectedCommodity=5&amp;SelectedCommodity=6" target="_blank" rel="noopener">occupational fatalities by accident class at underground mining locations, metal operators, 2000 to 2023</a> (49 deaths). MSHA accident classes.</p>
-    </figure>
-
-    <h3>Productivity has gone backwards</h3>
-    <p>Since 1995, manufacturing more than doubled its labour productivity while mining's fell by half. McKinsey attributes this to deeper mines, longer hauls, lower grades, and little new technology.</p>
-
-    <figure class="chart">
-      <figcaption>Productivity by industry, 1995 to 2024 (index, 1995 = 100)</figcaption>
-        <svg viewBox="0 0 620 320" role="img" aria-label="Line chart, productivity by industry indexed to 1995 = 100. Manufacturing rises to about 210 by 2024 and nine other industries land between about 120 and 180, while mining and quarrying drifts near 100 until the mid-2010s and then falls to about 50.">
-        <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" fill="var(--mute)">
-        <line x1="44" y1="261.3" x2="500" y2="261.3" stroke="var(--rule)" stroke-dasharray="2 4"/>
-        <text x="36" y="265.3" text-anchor="end">60</text>
-        <line x1="44" y1="200.0" x2="500" y2="200.0" stroke="var(--rule)"/>
-        <text x="36" y="204.0" text-anchor="end">100</text>
-        <line x1="44" y1="138.7" x2="500" y2="138.7" stroke="var(--rule)" stroke-dasharray="2 4"/>
-        <text x="36" y="142.7" text-anchor="end">140</text>
-        <line x1="44" y1="77.3" x2="500" y2="77.3" stroke="var(--rule)" stroke-dasharray="2 4"/>
-        <text x="36" y="81.3" text-anchor="end">180</text>
-        <line x1="44" y1="16.0" x2="500" y2="16.0" stroke="var(--rule)" stroke-dasharray="2 4"/>
-        <text x="36" y="20.0" text-anchor="end">220</text>
-        <text x="44.0" y="310" text-anchor="middle">1995</text>
-        <text x="201.2" y="310" text-anchor="middle">2005</text>
-        <text x="358.5" y="310" text-anchor="middle">2015</text>
-        <text x="500.0" y="310" text-anchor="middle">2024</text>
-        </g>
-        <path d="M44.0 200.0 L59.7 207.7 L75.4 210.7 L91.2 200.0 L106.9 181.6 L122.6 157.1 L138.3 138.7 L154.1 111.1 L169.8 108.0 L185.5 103.4 L201.2 97.3 L217.0 85.0 L232.7 92.7 L248.4 89.6 L264.1 85.0 L279.9 77.3 L295.6 74.3 L311.3 72.7 L327.0 72.7 L342.8 69.7 L358.5 68.1 L374.2 66.6 L389.9 65.1 L405.7 65.1 L421.4 65.1 L437.1 68.1 L452.8 66.6 L468.6 68.1 L484.3 72.7 L500.0 78.9" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-linejoin="round"><title>Information and communication: 179 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 196.9 L75.4 192.3 L91.2 184.7 L106.9 177.0 L122.6 166.3 L138.3 161.7 L154.1 154.0 L169.8 150.9 L185.5 141.7 L201.2 135.6 L217.0 123.3 L232.7 111.1 L248.4 104.9 L264.1 115.7 L279.9 111.1 L295.6 108.0 L311.3 100.3 L327.0 95.7 L342.8 89.6 L358.5 77.3 L374.2 69.7 L389.9 66.6 L405.7 71.2 L421.4 66.6 L437.1 65.1 L452.8 74.3 L468.6 69.7 L484.3 72.7 L500.0 78.9" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-linejoin="round"><title>Financial and insurance: 179 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 195.4 L75.4 192.3 L91.2 184.7 L106.9 175.5 L122.6 169.3 L138.3 160.1 L154.1 157.1 L169.8 154.0 L185.5 147.9 L201.2 141.7 L217.0 138.7 L232.7 135.6 L248.4 138.7 L264.1 134.1 L279.9 126.4 L295.6 123.3 L311.3 120.3 L327.0 115.7 L342.8 114.1 L358.5 111.1 L374.2 108.0 L389.9 104.9 L405.7 101.9 L421.4 103.4 L437.1 100.3 L452.8 92.7 L468.6 89.6 L484.3 95.7 L500.0 97.3" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-linejoin="round"><title>Wholesale and retail: 167 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 196.9 L75.4 190.8 L91.2 184.7 L106.9 177.0 L122.6 169.3 L138.3 163.2 L154.1 157.1 L169.8 149.4 L185.5 138.7 L201.2 129.5 L217.0 120.3 L232.7 115.7 L248.4 123.3 L264.1 127.9 L279.9 115.7 L295.6 111.1 L311.3 108.0 L327.0 104.9 L342.8 103.4 L358.5 101.9 L374.2 103.4 L389.9 100.3 L405.7 95.7 L421.4 92.7 L437.1 98.8 L452.8 92.7 L468.6 92.7 L484.3 100.3 L500.0 108.0" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-linejoin="round"><title>Industry (excl. construction): 160 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 193.9 L75.4 190.8 L91.2 184.7 L106.9 178.5 L122.6 172.4 L138.3 166.3 L154.1 161.7 L169.8 157.1 L185.5 149.4 L201.2 141.7 L217.0 137.1 L232.7 134.1 L248.4 138.7 L264.1 131.0 L279.9 127.9 L295.6 123.3 L311.3 120.3 L327.0 118.7 L342.8 117.2 L358.5 115.7 L374.2 114.1 L389.9 111.1 L405.7 109.5 L421.4 108.0 L437.1 106.5 L452.8 104.9 L468.6 103.4 L484.3 108.0 L500.0 111.1" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-linejoin="round"><title>Agriculture, forestry and fishing: 158 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 195.4 L75.4 190.8 L91.2 184.7 L106.9 177.0 L122.6 169.3 L138.3 163.2 L154.1 157.1 L169.8 152.5 L185.5 146.3 L201.2 141.7 L217.0 137.1 L232.7 134.1 L248.4 138.7 L264.1 135.6 L279.9 131.0 L295.6 126.4 L311.3 123.3 L327.0 120.3 L342.8 118.7 L358.5 115.7 L374.2 112.6 L389.9 111.1 L405.7 111.1 L421.4 109.5 L437.1 108.0 L452.8 104.9 L468.6 101.9 L484.3 108.0 L500.0 111.1" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-linejoin="round"><title>Business services: 158 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 196.9 L75.4 193.9 L91.2 187.7 L106.9 181.6 L122.6 175.5 L138.3 169.3 L154.1 164.7 L169.8 160.1 L185.5 155.5 L201.2 150.9 L217.0 147.9 L232.7 144.8 L248.4 147.9 L264.1 144.8 L279.9 141.7 L295.6 138.7 L311.3 137.1 L327.0 135.6 L342.8 134.1 L358.5 132.5 L374.2 131.0 L389.9 129.5 L405.7 127.9 L421.4 126.4 L437.1 126.4 L452.8 123.3 L468.6 120.3 L484.3 123.3 L500.0 126.4" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-linejoin="round"><title>Business economy: 148 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 198.5 L75.4 196.9 L91.2 193.9 L106.9 190.8 L122.6 187.7 L138.3 184.7 L154.1 181.6 L169.8 178.5 L185.5 175.5 L201.2 173.9 L217.0 172.4 L232.7 170.9 L248.4 172.4 L264.1 170.9 L279.9 169.3 L295.6 167.8 L311.3 169.3 L327.0 169.3 L342.8 167.8 L358.5 166.3 L374.2 164.7 L389.9 163.2 L405.7 161.7 L421.4 160.1 L437.1 158.6 L452.8 157.1 L468.6 155.5 L484.3 154.0 L500.0 154.0" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-linejoin="round"><title>Professional, scientific and technical: 130 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 204.6 L75.4 207.7 L91.2 204.6 L106.9 200.0 L122.6 193.9 L138.3 200.0 L154.1 203.1 L169.8 200.0 L185.5 196.9 L201.2 187.7 L217.0 187.7 L232.7 183.1 L248.4 184.7 L264.1 192.3 L279.9 196.9 L295.6 200.0 L311.3 203.1 L327.0 193.9 L342.8 189.3 L358.5 184.7 L374.2 181.6 L389.9 178.5 L405.7 175.5 L421.4 173.9 L437.1 172.4 L452.8 170.9 L468.6 169.3 L484.3 170.9 L500.0 172.4" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-linejoin="round"><title>Construction: 118 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 196.9 L75.4 190.8 L91.2 181.6 L106.9 173.9 L122.6 166.3 L138.3 163.2 L154.1 157.1 L169.8 147.9 L185.5 135.6 L201.2 123.3 L217.0 111.1 L232.7 104.9 L248.4 115.7 L264.1 108.0 L279.9 98.8 L295.6 91.1 L311.3 86.5 L327.0 83.5 L342.8 77.3 L358.5 72.7 L374.2 74.3 L389.9 66.6 L405.7 58.9 L421.4 51.3 L437.1 55.9 L452.8 52.8 L468.6 42.1 L484.3 19.1 L500.0 28.3" fill="none" stroke="var(--ink-2)" stroke-width="1.6" stroke-linejoin="round"><title>Manufacturing: 212 (2024)</title></path>
-        <path d="M44.0 200.0 L59.7 187.7 L75.4 183.1 L91.2 190.8 L106.9 196.9 L122.6 193.9 L138.3 184.7 L154.1 187.7 L169.8 184.7 L185.5 187.7 L201.2 186.2 L217.0 183.1 L232.7 189.3 L248.4 193.9 L264.1 187.7 L279.9 190.8 L295.6 193.9 L311.3 196.9 L327.0 192.3 L342.8 200.0 L358.5 209.2 L374.2 218.4 L389.9 223.0 L405.7 224.5 L421.4 230.7 L437.1 238.3 L452.8 242.9 L468.6 249.1 L484.3 258.3 L500.0 276.7" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><title>Mining and quarrying: 50 (2024)</title></path>
-        <circle cx="500.0" cy="276.7" r="3.5" fill="var(--ink)"/>
-        <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12">
-        <text x="508" y="32.3" fill="var(--ink-2)">Manufacturing</text>
-        <text x="508" y="115.1" fill="var(--mute)">Nine other</text><text x="508" y="129.1" fill="var(--mute)">industries</text>
-        <text x="508" y="280.7" fill="var(--ink)" font-weight="500">Mining</text>
-        </g></svg>
-      <p class="source">Source: McKinsey &amp; Company, <a href="https://www.mckinsey.com/industries/metals-and-mining/our-insights/unearthing-a-new-era-of-innovation-in-mining" target="_blank" rel="noopener">Unearthing a new era of innovation in mining</a> (December 2025), OECD data. Redrawn from the report's exhibit; values approximate. Mining and quarrying includes energy, water supply and waste management in the OECD series. Hover a line for its name.</p>
-    </figure>
-
-    <h3>The face hasn't changed</h3>
-    <p>Sandvik and Epiroc sell automated drilling on their new rigs, but most small and mid-tier mines run older machines without it. On those rigs a person still stands at the face, lines up the boom by eye, drills the pattern, charges it, and backs out for the blast.</p>
-
-    <h3>What operators told us</h3>
-    <p>We have talked to over a dozen people who run or have run underground operations. The automation the OEMs sell comes with a new multi-million dollar machine, which mid-tier mines running older fleets can't justify.</p>
-
-    <h3>Most of the focus is on the surface</h3>
-    <p>Most of the autonomy work in mining has focused on the surface, like haul trucks in open pits and drill rigs on benches, where there is GPS and room to move. Underground has had much less attention.</p>
-
-    <h3>Why a retrofit</h3>
-    <p>A kit that fits the rigs already on site is the fastest way to get autonomy into mines that can't buy new equipment.</p>
-    <p>Every kit also collects data on the rock, the rig, and the cycle, and since we don't sell equipment we can work across every brand at the site.</p>
+    <h3>Why we are building here</h3>
+    <p>This is one of the few places in the economy where the demand for physical work is growing, the people to do it are disappearing, and nobody disputes it. Machines now produce enough data for a model to see what a technician sees, and robots can finally handle repetitive physical work in messy, real environments. The OEMs each cover only their own brand, and every fleet we have talked to runs a mix. Because we don't sell equipment, we can work on every machine on the site.</p>
   </section>
 
   <section id="goals">
@@ -289,22 +204,22 @@
       <li>
         <span class="when">First</span>
         <div>
-          <strong>Drill a pattern with no one at the face</strong>
-          <p>Our kit on a real jumbo at a real test mine, drilling a full pattern with the operator out of the heading.</p>
+          <strong>Take preventive maintenance off the technician's plate</strong>
+          <p>Robots doing routine service on real machines in a real shop.</p>
         </div>
       </li>
       <li>
         <span class="when">Then</span>
         <div>
-          <strong>Run one full cycle</strong>
-          <p>Drill, charge, blast, muck, scale, and bolt, with a machine doing each step and a person only supervising.</p>
+          <strong>Diagnose any machine on the site</strong>
+          <p>Physical AI that reads every signal a machine produces, across every brand, and says what is wrong.</p>
         </div>
       </li>
       <li>
         <span class="when">Eventually</span>
         <div>
-          <strong>Run a heading with nobody underground</strong>
-          <p>Software that tracks every heading, catches stalls before they happen, and sends the fleet through the cycle on its own.</p>
+          <strong>Diagnose and repair, end to end</strong>
+          <p>So skilled technicians only work on the hardest problems.</p>
         </div>
       </li>
     </ul>
@@ -312,8 +227,8 @@
 
   <section id="team">
     <p class="eyebrow">Team</p>
-    <h2>Team</h2>
-    <p>We are five mechatronics engineering students at the University of Waterloo. We co-founded WatDIG, Canada's first student TBM team, and have worked at Tesla, The Boring Company, Impossible Metals, Hermeus, Ford, and Clearpath.</p>
+    <h2>Why us</h2>
+    <p>We are five mechatronics engineering students at the University of Waterloo, and we have worked at Tesla, The Boring Company, Impossible Metals, Hermeus, Ford, and Clearpath. Between us we cover hydraulics, electrical, software, and robotics hardware, and we have had more than 30 conversations with the maintenance managers who live this problem.</p>
     <ul class="team">
       <li><strong><a href="https://www.linkedin.com/in/matthew-bridger-2a4b79253" target="_blank" rel="noopener">Matthew Bridger</a></strong><span>Hydraulics &amp; field</span></li>
       <li><strong><a href="https://www.linkedin.com/in/jivankesan" target="_blank" rel="noopener">Jivan Kesan</a></strong><span>Software &amp; autonomy</span></li>
@@ -322,9 +237,8 @@
       <li><strong><a href="https://www.linkedin.com/in/shiv-patel-7946b91b4" target="_blank" rel="noopener">Shiv Patel</a></strong><span>Robotics hardware</span></li>
     </ul>
 
-    <h3>What we've built</h3>
-    <p>At The Boring Company's Not-a-Boring Competition we won the navigation challenge with an autonomous rover that drove through a tunnel with no GPS. The next year we built Canada's first student micro TBM.</p>
-    <p>Building WatDIG was a lot like starting a company. With a $40k budget and 10 months, we recruited the best engineers we knew at Waterloo and mobilized a team of 30 students, all while in school and on internships. We built a 2 tonne machine with 100,000 lbs of thrust and 6x the torque of a BMW M4, and took it from an empty CAD file to cutting dirt in Texas.</p>
+    <h3>We have built heavy hardware together</h3>
+    <p>The five of us built WatDIG, a 2 tonne micro tunnel boring machine, in 10 months on a $40k budget. We know how to take a real machine from zero to one, and we have already done it as a team.</p>
     <figure class="photo">
       <img src="watdig.png" alt="The WatDIG team in hard hats and hi-vis vests standing in an excavated launch pit behind their black micro tunnel boring machine, with the WatDIG logo on the machine and on the jacking frame beside it." width="1600" height="826" loading="lazy">
       <figcaption>The WatDIG team and machine in the launch pit at the Not-a-Boring Competition.</figcaption>
